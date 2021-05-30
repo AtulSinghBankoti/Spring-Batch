@@ -1,27 +1,25 @@
-package com.spring.batch.domain;
+package com.demo.spring.batch.domain;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Customer {
 
 	private final long id;
 	
-	private final String fisrtName;
-	
+	private final String firstName;
 	
 	private final String lastName;
 	
-	
 	private final Date birthdate;
 
-
-	public Customer(long id, String fisrtName, String lastName, Date birthdate) {
+	public Customer(long id, String firstName, String lastName, Date birthdate) {
 		this.id = id;
-		this.fisrtName = fisrtName;
+		this.firstName = firstName;
 		this.lastName = lastName;
 		this.birthdate = birthdate;
 	}
 
+	
 	
 	
 	
@@ -32,9 +30,11 @@ public class Customer {
 
 
 
-	public String getFisrtName() {
-		return fisrtName;
+
+	public String getFirstName() {
+		return firstName;
 	}
+
 
 
 
@@ -46,6 +46,7 @@ public class Customer {
 
 
 
+
 	public Date getBirthdate() {
 		return birthdate;
 	}
@@ -53,10 +54,13 @@ public class Customer {
 
 
 
+
 	@Override
 	public String toString() {
-		return "Customer [id=" + id + ", fisrtName=" + fisrtName + ", lastName=" + lastName + ", birthdate="
-				+ birthdate + "]";
+		return "Customer [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", birthdate=" + birthdate
+				+ "]";
 	}
+	
+	
 	
 }

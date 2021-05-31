@@ -70,6 +70,9 @@ public class JobConfiguration {
 				.<Customer, Customer>chunk(10)
 				.reader(customerItemReader())
 				.writer(customerItemWriter())
+				.faultTolerant()
+				.retry(RuntimeException.class)
+				.retryLimit(3)
 				.build();
 	}
 	

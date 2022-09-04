@@ -1,2 +1,2 @@
 # Spring-Batch
-spring batch demos
+This project demonstrate usage of spring batch.
